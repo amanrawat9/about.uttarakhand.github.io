@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TAVELS</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>    
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Uttarakhand <span>Vi</span>ew
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Tours</a>
+                <a href="#">Gallery</a>
+                <a href="#">Resorts</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <section class="h-text">
+            <i class="fa fa-camera" id="camera"></i>
+            <h1  data-aos="fade-up">Capturing the moments that captivate your heart</h1>
+            <input type="text" name="" placeholder="search here...">
+            <button><i class="fa fa-search"></i></button>
+        </section>
+    </header>
+    
+    <section id="filter-gallery">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*"> All</li>
+                <li data-filter=".nature">Nature</li>
+                <li data-filter=".faishon">Fashion</li>
+                <li data-filter=".wedding">Wedding</li>
+            </ul>
+        </div>
+        <div class="portfolio-item">
+            <div class="item nature"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+                <img src="pic/p1.jpg" width="100" height="100">
+            </div>
+            <div class="portfolio-item">
+                <div class="item faishon"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+                    <img src="pic/p2.jpg" width="100" height="100">
+                </div>
+             <div class="portfolio-item">
+                <div class="item wedding"  data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+                    <img src="pic/p3.jpg" width="100" height="100">
+                </div>
+                <div class="portfolio-item">
+                    <div class="item nature"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+                        <img src="pic/p4.jpg" width="100" height="100">
+                    </div>
+                    <div class="portfolio-item">
+                        <div class="item faishon"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+                            <img src="pic/p5.jpg" width="100" height="100">
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item wedding"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                                <img src="pic/p6.jpg" width="100" height="100">
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="item nature"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+                                    <img src="pic/p7.jpg" width="100" height="100">
+                                </div>
+                                <div class="portfolio-item">
+                                    <div class="item faishon"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
+                                        <img src="pic/p8.jpg" width="100" height="100">
+                                    </div>
+                                    <div class="portfolio-item">
+                                        <div class="item wedding"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
+                                            <img src="pic/p9.jpg" width="100" height="100">
+                                        </div>
+                                    </div>
+                                </section>
+                                <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                               
+                                <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                                <script type="text/javascript">
+                                $('portfolio-item').isotope({
+                                    // options
+                                         itemSelector: '.item',
+                                         layoutMode: 'fitRows'
+                                        });
+
+                                        $('.portfolio-menu ul li').click(function(){
+                                        $('.portfolio-menu ul li').removeClass('active');
+                                        $(this).addClass('active');    
+                                        
+
+                                        var selector = $(this).attr('data-filter');$('portfolio-item').isotope({filter:selector});
+                                        
+                                        
+                                    });
+                                    </script>
+                                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+                                    <script>
+                                        AOS.init();
+                                      </script>
+
+                                <section class="member">
+                                    <div class="member-info" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+                                        <h1>Our<span>Informations</span></h1>
+                                        <p>What our member says</p>
+                                    </div>
+                                    <div class="member-card" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="200">
+                                        <img src="pic/member.png" height="200" width="200">
+                                        <p>
+                                            Mussoorie is a hill station and a municipal board, near Dehradun 
+                                            city in the Dehradun district of the Indian state of Uttarakhand. It is 
+                                            about 35 kilometres from the state capital of Dehradun and 290 km 
+                                            north of the national capital of New Delhi. The hill station is in the 
+                                            foothills of the Garhwal Himalayan range.</p>
+                                        <h2>* Mussoorie </h2>
+                                            <img src="pic/icon1.png" width="90">
+                                            <img src="pic/icon2.png" width="90">
+                                            <img src="pic/icon3.png" width="90">
+                                            <img src="pic/icon4.png" width="90">
+                                        </div>
+                                        <div class="m-image" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                                            <img src="pic/z8.jpg">
+                                            <img src="pic/z2.jpg">
+                                            <img src="pic/z7.jpg">
+                                            <img src="pic/z4.jpg">
+                                            <img src="pic/z5.jpg">
+                                            <img src="pic/z6.jpg">
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div class="newsletter">
+                                            <div data-aos="fade-up" data-aos-offset="200">
+                                                <h2>Subscribe our newsletter</h2>
+                                                <p>We're a team of non-cynics who truly care for our work.</p>
+                                            </div>
+                                            <div class="ntext" data-aos="fade-up-right" data-aos-offset="200">
+                                                <label>
+                                                    <input type="text" name="" placeholder="Enter your email">
+                                                    <button>Subscribe</button>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+                                            <div>
+                                                <h1>Informations</h1>
+                                                <p>Lorem ipsum dolor sit amet,consectetur elit. Aman sit dicta.</p>
+                                                <i class="fa fa-whatsapp"></i>
+                                                <i class="fa fa-instagram"></i>
+                                                <i class="fa fa-telegram"></i>
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                            <div>
+                                                <h1>Useful links</h1>
+                                                <P>About us</P>
+                                                <P>Gallery</P>
+                                                <P>Blog posts</P>
+                                                <P>pricing plans</P>
+                                            </div>
+                                            <div>
+                                                <h1>Details</h1>
+                                                <P>Photographic</P>
+                                                <P>Gallery</P>
+                                                <P>About</P>
+                                                <P>Pricing plans</P>
+                                            </div>
+                                            <div>
+                                                <h1>Help & Support</h1>
+                                                <P>Privacy policy</P>
+                                                <P>Term & conditions</P>
+                                                <P>Technical Support</P>
+                                                <P>Customer care</P>
+                                            </div>
+
+
+
+                                        </div>
+                                    </footer>
+                                            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+                                            <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                               
+                                    </body>
+                                    </html>
